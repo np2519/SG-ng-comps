@@ -1,0 +1,32 @@
+* {
+  /* margin-left: 15px; */
+  /* font-family: sans-serif; */
+}
+
+/* a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline wavy blue;
+}
+
+a:active {
+  background-color: aquamarine;
+  font-style: oblique;
+}
+
+a::after {
+  content: " ";
+} */
+
+.highlight {
+  background-color: aquamarine;
+}
