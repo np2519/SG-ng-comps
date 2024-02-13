@@ -6,7 +6,22 @@
   content: "xx";
 }
 
-#tony3 {
-  width: 50px;
+img {
+  width: 60px;
   float: left;
+  margin-right: 5px;
+}
+
+.cleared-float {
+  clear: left;
+}
+
+.box {
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207 232 220);
+  padding: 1em;
 }

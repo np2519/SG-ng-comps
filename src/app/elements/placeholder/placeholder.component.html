@@ -1,4 +1,4 @@
-<div class="card">
+<!-- <div class="card">
   <p class="card-text placeholder-glow">
     <span class="placeholder col-6 bg-secondary"></span>
   </p>
@@ -18,17 +18,68 @@
       <span class="placeholder col-5 bg-secondary"></span>
     </p>
   </div>
-</div>
+</div> -->
 
-<img
-  id="tony3"
+<!-- <img
   src="https://images.unsplash.com/photo-1643901147788-77ee53a6b059?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFyc2hhbGwlMjBzcGVha2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
   alt="..."
-/>
-<p class="placeholder-glow">
+/> -->
+<div class="box"></div>
+
+@for (line of img_lines; let i = $index; track i;) {
+<p class="card-text placeholder-glow">
+  @for (w of line.widths; let j = $index; track j;) {
+  <span
+    class="placeholder bg-secondary me-1"
+    [ngClass]="'col-' + w.toString()"
+  ></span>
+  }
+</p>
+}
+
+<!-- <p class="placeholder-glow">
   <span class="placeholder col-6 bg-secondary mx-1"></span>
 </p>
 <p id="tony" class="placeholder-glow">
   <span class="placeholder col-3 bg-secondary mx-1"></span>
   <span class="placeholder col-3 bg-secondary mx-1"></span>
 </p>
+<p class="placeholder-glow">
+  <span class="placeholder col-10 bg-secondary mx-1"></span>
+</p>
+<p class="placeholder-glow">
+  <span class="placeholder col-2 bg-secondary mx-1"></span>
+</p> -->
+
+<div class="cleared-float">
+  <!-- <p class="card-text placeholder-glow">
+    <span class="placeholder col-6 bg-secondary"></span>
+  </p>
+  <p class="card-text placeholder-glow">
+    <span class="placeholder col-3 bg-secondary me-1"></span>
+    <span class="placeholder col-2 bg-secondary me-1"></span>
+    <span class="placeholder col-6 bg-secondary me-1"></span>
+  </p> -->
+  <!-- @for (line of x; let index = $index; track index;) {
+  <p class="card-text placeholder-glow">
+    <span class="placeholder bg-secondary" [ngClass]="randomLine()"></span>
+  </p>
+  } -->
+
+  @for (line of p_lines; let i = $index; track i;) {
+  <p class="card-text placeholder-glow">
+    @for (w of line.widths; let j = $index; track j;) {
+    <span
+      class="placeholder bg-secondary me-1"
+      [ngClass]="'col-' + w.toString()"
+    ></span>
+    }
+  </p>
+  }
+</div>
+
+<!-- @for (line of x; let index = $index; track index;) {
+<p class="card-text placeholder-glow">
+  <span class="placeholder bg-secondary" [ngClass]="randomLine()"></span>
+</p>
+} -->
